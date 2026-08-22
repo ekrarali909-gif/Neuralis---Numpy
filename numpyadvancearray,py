@@ -1,0 +1,19 @@
+import numpy as np
+
+# Create a (3, 3) array with values from 1 to 9
+arr = np.arange(1, 10).reshape(3, 3)
+
+print("Original Array:")
+print(arr)
+
+# Reshape to (1, 9)
+arr_row = arr.reshape(1, 9)
+
+print("\nReshaped to (1, 9):")
+print(arr_row)
+
+# Reshape to (9, 1)
+arr_col = arr.reshape(9, 1)
+
+print("\nReshaped to (9, 1):")
+print(arr_col)
